@@ -153,6 +153,10 @@ body {
   }
 }
 
+.heading-2--link {
+  text-decoration: none;
+}
+
 .heading-2--nav {
   color: #02d002;
   margin-left: 2rem;
