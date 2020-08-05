@@ -708,7 +708,13 @@ body {
 @media only screen and (max-width: 40em) {
   .features__img {
     grid-column: 1 / -1;
-    height: 60vh;
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 30.25em) {
+  .features__img {
+    height: 30vh;
   }
 }
 
