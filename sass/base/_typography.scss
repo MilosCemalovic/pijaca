@@ -17,17 +17,17 @@
 
   &--link {
     text-decoration: none;
+
+    @media only screen and (max-width: $bp-6) {
+      display: none;
+      margin-left: 1rem;
+    }
   }
   
   &--nav {
     color: $color-green;
     margin-left: 2rem;
     display: block; 
-
-    @media only screen and (max-width: $bp-6) {
-      display: none;
-      margin-left: 1rem;
-    }
   }
 }
 
