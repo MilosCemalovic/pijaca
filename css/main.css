@@ -157,17 +157,17 @@ body {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 40em) {
+  .heading-2--link {
+    display: none;
+    margin-left: 1rem;
+  }
+}
+
 .heading-2--nav {
   color: #02d002;
   margin-left: 2rem;
   display: block;
-}
-
-@media only screen and (max-width: 40em) {
-  .heading-2--nav {
-    display: none;
-    margin-left: 1rem;
-  }
 }
 
 .heading-3 {
