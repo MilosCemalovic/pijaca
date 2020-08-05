@@ -1,0 +1,39 @@
+.logo {
+
+  &--top {
+    width: 3rem;
+    height: 3rem;
+
+  }
+
+  &--nav {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.3rem;
+    @include hover-active;
+  }
+
+  &__link {
+
+
+    &--top {
+      display: block; 
+      
+      @include hover-active;
+
+      @media only screen and (max-width: $bp-6) {
+        display: none;
+      }
+    }
+
+    &--nav {
+      display: none; 
+
+      @media only screen and (max-width: $bp-6) {
+        display: block; 
+      }
+    }
+
+  }
+
+}

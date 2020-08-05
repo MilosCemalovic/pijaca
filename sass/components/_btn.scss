@@ -1,0 +1,89 @@
+.btn {
+  padding: 2rem 3rem;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media only screen and (max-width: $bp-3) {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+
+  &--green {
+    background-color: $color-green;
+    color: $color-white;
+
+    &:hover {
+      background-color: rgba($color-green, .9);
+    }
+  }
+
+
+  &--white {
+    background-color: $color-grey-light-1;
+    color: $color-grey-dark-3;
+    margin-left: 1.4rem;
+
+    &:hover {
+      background-color: rgba($color-grey-light-1, .9);
+    }
+  }
+
+  &--footer {
+    align-self: start;
+
+    @media only screen and (max-width: $bp-3) {
+      padding: 2rem;
+    }
+  }
+
+  &--form {
+
+    @media only screen and (max-width: $bp-3) {
+      padding: 2rem;
+    }
+  }
+
+}
+
+.btn-inline {
+  &:link,
+  &:visited { 
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-green;
+    letter-spacing: .2rem;
+    
+    @include hov-under;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &--story {
+    justify-self: start; 
+  }
+
+  &--location {
+    
+    justify-self: start; 
+
+    @media only screen and (max-width: $bp-3) {
+      justify-self: center;
+    }
+
+  }
+
+  &--features {
+    margin-bottom: 1rem; 
+    justify-self: start; 
+
+    @media only screen and (max-width: $bp-3) {
+      justify-self: end;
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+.nav {
+  background-color: $color-white;
+  grid-column:  full-start / full-end;
+  @include grid-center-5;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  position: sticky;
+  top: -.2rem;
+  box-shadow: $bx-sw-1;
+  z-index: 2000;
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    column-gap: 1.4rem;
+    margin-right: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-green;
+    
+    @include hov-under;
+
+    @media only screen and (max-width: $bp-7) {
+      font-size: 1.7rem;
+    }
+
+  }
+
+}

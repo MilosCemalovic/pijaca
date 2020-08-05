@@ -1,0 +1,22 @@
+.form {
+  width: 80%;
+  display: grid;
+  row-gap: 3rem;
+
+  &__input {
+    padding: 2rem;
+    background-color: $color-grey-light-1;
+    border: none;
+    font-family: $font-primary;
+
+    &::placeholder {
+      color: $color-grey-dark-3;
+      font-size: 1.7rem;
+      font-weight: 400;
+
+      @media only screen and (max-width: $bp-3) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

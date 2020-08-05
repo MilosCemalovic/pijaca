@@ -1,0 +1,17 @@
+.top {
+  background-color: $color-grey-light-1;
+  grid-column:  full-start / full-end;
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+
+  @include grid-center-5;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  @media only screen and (max-width: $bp-6) {
+    padding: 0 2rem; 
+  }
+}

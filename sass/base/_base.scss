@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-2) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-grey-primary;
+  background-color: $color-grey-light-1;
+  font-size: $font-size-1;
+  line-height: $line-height-2;
+  display: grid;
+  grid-template-rows: 5rem 8rem 70rem repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 27rem)) [center-end] minmax(10rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-3) {
+    grid-template-rows: 5rem 8rem 50rem repeat(6, min-content);
+  }
+
+  @media only screen and (max-width: $bp-7) {
+    grid-template-rows: 5rem 8rem 30rem repeat(6, min-content);
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, minmax(min-content, 27rem)) [center-end] minmax(5rem, 1fr) [full-end];
+  }
+}

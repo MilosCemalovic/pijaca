@@ -1,0 +1,79 @@
+.footer {
+
+  &-1 {
+    grid-column:  full-start / full-end;
+    grid-row: 9 / 10;
+    background-image: linear-gradient(to right, rgba($color-grey-dark-2, .6), rgba($color-grey-dark-2, .6)), url(../img/pijaca-footer.jpg);
+    background-size: cover;
+    // background-position: center;
+    // z-index: 1;
+  }
+
+  &-2 {
+    grid-column:  center-start / center-end;
+    grid-row: 9 / 10;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    // justify-content: space-around; // radi samo ako je grid-template-columns: repeat(2, max-content), NE RADI ako je grid-template-columns: repeat(2, 1fr)
+    // align-content: space-around;
+    // z-index: 2;
+    padding: 15rem 0;
+
+    @media only screen and (max-width: $bp-4) {
+      grid-template-rows: repeat(2, min-content);
+      padding: 10rem 0;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      padding: 5rem 0;
+    }
+
+  }
+  
+  
+  &__box {
+    color: $color-grey-light-1;
+    background-color: rgba($color-grey-dark-2, .8);
+    display: grid;
+    justify-items: center;
+    padding: 10rem 0;
+    font-family: $font-secondary;
+
+    &--1 {
+      grid-template-rows: repeat(11, min-content);
+      row-gap: 2rem;
+
+      @media only screen and (max-width: $bp-4) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &--2 {
+      grid-template-rows: repeat(6, min-content);
+      row-gap: 3rem;
+
+      @media only screen and (max-width: $bp-4) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+      }
+    }
+  }
+
+  &__line {
+    width: 80%;
+    height: .1rem;
+    color: $color-green;
+  }
+
+  &__day {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  // &__time {
+
+  // }
+  
+}

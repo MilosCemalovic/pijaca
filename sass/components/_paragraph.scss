@@ -1,0 +1,76 @@
+.par {
+  font-size: 1.5rem;
+  color: $color-grey-primary;
+  letter-spacing: .2rem;
+  line-height: $line-height-3;
+
+  &--header {
+    width: 70%;
+    color: $color-grey-light-1;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-3) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-4) {
+      text-shadow: $text-shadow-1;
+    }
+
+    @media only screen and (max-width: $bp-7) {
+      width: 100%;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+  }
+
+  // &--about {
+  // }
+
+  &--location {
+
+    @media only screen and (max-width: $bp-3) {
+      text-align: center;
+    }
+
+  }
+
+  &--location,
+  &--story {
+    margin-bottom: 4rem;
+  }
+
+  &--story {
+
+    @media only screen and (max-width: $bp-3) {
+      line-height: $line-height-2;
+      margin-bottom: 2.5rem;
+    }
+
+    &-2 {
+      color: $color-grey-light-2;
+    }
+  }
+
+
+  &--features {
+    margin-bottom: 2rem;
+    line-height: $line-height-3;
+
+    @media only screen and (max-width: $bp-3) {
+      text-align: right;
+    }
+  }
+
+  &--footer-box-2 {
+    color: $color-grey-light-2;
+    width: 80%;
+    text-align: center;
+    font-size: 1.8rem;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: 1.4rem;
+    }
+  }
+
+}

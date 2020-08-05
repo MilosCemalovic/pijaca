@@ -1,0 +1,167 @@
+%heading {
+  font-family: $font-primary;
+}
+
+.heading-1 {
+  @extend %heading;
+  color: $color-green;
+  display: none; 
+
+  @media only screen and (max-width: $bp-6) {
+    display: block; 
+  }
+}
+
+.heading-2 {
+  @extend %heading;
+  
+  &--nav {
+    color: $color-green;
+    margin-left: 2rem;
+    display: block; 
+
+    @media only screen and (max-width: $bp-6) {
+      display: none;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  color: $color-grey-light-1;
+  font-size: 5.5rem;
+  line-height: 1.1;
+  letter-spacing: .1rem;
+  font-weight: 300;
+  
+  &--header {
+    width: 70%;
+
+    @media only screen and (max-width: $bp-3) {
+      font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-4) {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      text-shadow: $text-shadow-1;
+    }
+
+    @media only screen and (max-width: $bp-7) {
+      font-size: 2rem;
+    }
+  }
+
+  &--pijaca {
+    grid-column: 1 / -1;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    font-weight: 600;
+    text-shadow: $text-shadow-1;
+
+    &-1 {
+      grid-row: 5 / 6;
+    }
+
+    &-2 {
+      grid-row: 7 / 8;
+    }
+  }
+}
+
+.heading-4 {
+
+  color: $color-grey-dark-3;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: $line-height-1;
+
+  &--about {
+
+    @media only screen and (max-width: $bp-3) {
+      grid-row: 1 / 2;
+      align-self: center;
+    }
+
+    @media only screen and (max-width: $bp-4) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+    
+  }
+
+  &--story {
+    
+    margin-bottom: 3rem;
+    
+    &-1 {
+      width: 55%;
+    }
+
+    &-2 {
+      color: $color-grey-light-1;
+    }
+
+    @media only screen and (max-width: $bp-3) {
+      width: 100%;
+      font-size: 2rem;
+      line-height: $line-height-1;
+    }
+  }
+
+  &--features {
+    grid-column: 1 / -1;
+
+    @media only screen and (max-width: $bp-6) {
+      justify-self: center;
+    }
+  }
+
+}
+
+.heading-5 {
+
+  color: $color-grey-dark-3;
+
+  &--location {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &--footer-box-1 {
+    color: $color-grey-light-1;
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-6) {
+    font-size: 1.75rem;
+  }
+}
+
+.heading-6 {
+
+  font-weight: 400;
+
+  &--features {
+    margin-bottom: 2.5rem;
+    color: $color-grey-dark-3;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-3) {
+      text-align: right;
+    }
+  }
+
+  &--footer {
+    color: $color-grey-light-1;
+    font-size: 2.5rem;
+
+    &-2 {
+      margin-top: 5rem;
+    }
+  }
+
+}

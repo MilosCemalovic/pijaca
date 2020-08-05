@@ -1,0 +1,25 @@
+.header {
+  grid-column:  full-start / full-end;
+  background-image: url(../img/pijaca-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 3rem;
+
+  @media only screen and (max-width: $bp-3) {
+    padding: 12rem;
+  }
+
+  @media only screen and (max-width: $bp-4) {
+    padding: 6rem;
+    justify-items: center;
+  }
+
+  @media only screen and (max-width: $bp-7) {
+    padding: 3rem;
+    // justify-content: center;
+  }
+
+}
