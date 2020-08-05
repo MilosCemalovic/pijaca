@@ -1,2 +1,2 @@
 # pijaca
-pure HTML &amp; CSS - CSS GRID &amp; SASS - single page website template
+single page market template - BEM Architecture, HTML & CSS, CSS GRID, SASS and JS smooth scroll
