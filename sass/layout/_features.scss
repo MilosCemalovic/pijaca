@@ -5,6 +5,7 @@
   grid-template-rows: repeat(2, min-content);
   column-gap: 2rem;
   row-gap: 7rem;
+  transition: $transition-2;
 
   @media only screen and (max-width: $bp-3) {
     grid-template-rows: repeat(3, min-content);
@@ -102,6 +103,18 @@
     color: $color-grey-light-3;
     text-transform: uppercase;
     margin-bottom: 2rem;
+  }
+
+  &:hover &__img {
+    animation: moveInRight 2s;
+  }
+
+  &:hover .heading-4 {
+    animation: moveInLeft 2s;
+  }
+
+  &:hover &__content {
+    animation: moveInBottom 2s;
   }
 
 }

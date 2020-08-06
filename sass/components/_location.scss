@@ -1,5 +1,6 @@
 .location {
   display: grid;
+  transition: $transition-2;
 
   @media only screen and (max-width: $bp-3) {
     grid-column: 1 / -1;
@@ -14,4 +15,27 @@
     margin-bottom: 3rem;
   }
 
+  &:hover {
+    backdrop-filter: blur(10px);
+    transform: scale(1.2);
+    box-shadow: $bx-sw-2;
+    padding: 2rem;
+  }
+
+
+
+}
+
+.about:hover .location {
+  &--1 {
+    animation: moveInLeft 2s;
+  }
+
+  &--2 {
+    animation: moveInBottom 2s;
+  }
+
+  &--3 {
+    animation: moveInRight 2s;
+  }
 }

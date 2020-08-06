@@ -4,6 +4,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
+  transition: $transition-2;
 
   @media only screen and (max-width: $bp-3) {
     padding: 1rem 2rem;
@@ -28,6 +29,10 @@
     &:hover {
       background-color: rgba($color-grey-light-1, .9);
     }
+  }
+
+  &--header {
+    animation: moveInLeft-2 2s;
   }
 
   &--footer {

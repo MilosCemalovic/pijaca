@@ -1,6 +1,7 @@
 .story {
   grid-column:  center-start / center-end;
   grid-row: 6 / 7;
+  transition: $transition-2;
 
   @media only screen and (max-width: $bp-4) {
     margin: 10rem 0;
@@ -59,13 +60,12 @@
   &__img {
     
     display: block;
-    transition: $transition-2;
 
     &--1 {
       width: 80%;
       justify-self: center;
       height: 100%;
-      animation: moveInRight 2s;
+      // animation: moveInRight 2s;
 
       @media only screen and (max-width: $bp-6) {
         width: 100%;
@@ -77,7 +77,7 @@
       height: 105%;
       z-index: 5;
       align-self: center;
-      animation: moveInLeft 2s;
+      // animation: moveInLeft 2s;
     }
 
     @media only screen and (max-width: $bp-7) {
@@ -85,4 +85,13 @@
       align-self: center;
     }
   }
+
+  &__box--1:hover &__img--1 {
+    animation: moveInRight 2s;
+  }
+
+  &__box--2:hover &__img--2 {
+    animation: moveInLeft 2s;
+  }
+
 }

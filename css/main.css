@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes moveInLeft-2 {
+  0% {
+    transform: translateX(-400%);
+  }
+  80% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes moveInRight {
   0% {
     transform: translateX(300%);
@@ -19,6 +31,17 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -176,10 +199,12 @@ body {
   line-height: 1.1;
   letter-spacing: .1rem;
   font-weight: 300;
+  transition: all 0.5s;
 }
 
 .heading-3--header {
   width: 70%;
+  animation: moveInTop 1s;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -326,6 +351,7 @@ body {
   font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -352,6 +378,10 @@ body {
 
 .btn--white:hover {
   background-color: rgba(247, 247, 247, 0.9);
+}
+
+.btn--header {
+  animation: moveInLeft-2 2s;
 }
 
 .btn--footer {
@@ -452,6 +482,7 @@ body {
 
 .location {
   display: grid;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -467,6 +498,25 @@ body {
   font-size: 1.5rem;
   color: #171717;
   margin-bottom: 3rem;
+}
+
+.location:hover {
+  backdrop-filter: blur(10px);
+  transform: scale(1.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.about:hover .location--1 {
+  animation: moveInLeft 2s;
+}
+
+.about:hover .location--2 {
+  animation: moveInBottom 2s;
+}
+
+.about:hover .location--3 {
+  animation: moveInRight 2s;
 }
 
 .logo--top {
@@ -515,12 +565,14 @@ body {
   color: #666;
   letter-spacing: .2rem;
   line-height: 1.7;
+  transition: all 0.5s;
 }
 
 .par--header {
   width: 70%;
   color: #f7f7f7;
   font-size: 2rem;
+  animation: moveInRight 2.5s;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -662,6 +714,7 @@ body {
   grid-template-rows: repeat(2, min-content);
   column-gap: 2rem;
   row-gap: 7rem;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -747,6 +800,18 @@ body {
   color: #9599a1;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+.features:hover .features__img {
+  animation: moveInRight 2s;
+}
+
+.features:hover .heading-4 {
+  animation: moveInLeft 2s;
+}
+
+.features:hover .features__content {
+  animation: moveInBottom 2s;
 }
 
 .footer-1 {
@@ -915,9 +980,15 @@ body {
   grid-row: 7 / 8;
 }
 
+.pijaca-foto:hover + .heading-3 {
+  backdrop-filter: blur(10px);
+  transform: scale(2);
+}
+
 .story {
   grid-column: center-start / center-end;
   grid-row: 6 / 7;
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 51.75em) {
@@ -982,14 +1053,12 @@ body {
 
 .story__img {
   display: block;
-  transition: all 0.5s;
 }
 
 .story__img--1 {
   width: 80%;
   justify-self: center;
   height: 100%;
-  animation: moveInRight 2s;
 }
 
 @media only screen and (max-width: 40em) {
@@ -1003,7 +1072,6 @@ body {
   height: 105%;
   z-index: 5;
   align-self: center;
-  animation: moveInLeft 2s;
 }
 
 @media only screen and (max-width: 30.25em) {
@@ -1011,6 +1079,14 @@ body {
     height: 80%;
     align-self: center;
   }
+}
+
+.story__box--1:hover .story__img--1 {
+  animation: moveInRight 2s;
+}
+
+.story__box--2:hover .story__img--2 {
+  animation: moveInLeft 2s;
 }
 
 .top {

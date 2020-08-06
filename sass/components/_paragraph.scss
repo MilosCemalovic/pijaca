@@ -3,11 +3,13 @@
   color: $color-grey-primary;
   letter-spacing: .2rem;
   line-height: $line-height-3;
+  transition: $transition-2;
 
   &--header {
     width: 70%;
     color: $color-grey-light-1;
     font-size: 2rem;
+    animation: moveInRight 2.5s;
 
     @media only screen and (max-width: $bp-3) {
       font-size: 1.5rem;
