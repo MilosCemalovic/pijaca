@@ -258,7 +258,7 @@ body {
 
 @media only screen and (max-width: 40em) {
   .pijaca-foto:hover + .heading-3 {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }
 
