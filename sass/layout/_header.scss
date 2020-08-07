@@ -17,9 +17,10 @@
     justify-items: center;
   }
 
-  @media only screen and (max-width: $bp-7) {
-    padding: 3rem;
-    // justify-content: center;
+  @media only screen and (max-width: $bp-6) {
+    // padding: 3rem;
+    align-content: center;
+    row-gap: 8rem;
   }
 
 }

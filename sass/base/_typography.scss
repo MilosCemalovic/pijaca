@@ -9,6 +9,7 @@
 
   @media only screen and (max-width: $bp-6) {
     display: block; 
+    font-size: 1.5rem;
   }
 }
 
@@ -78,6 +79,15 @@
 
   }
 
+}
+
+.pijaca-foto:hover + .heading-3 {
+  backdrop-filter: blur(10px);
+  transform: scale(2);
+
+  @media only screen and (max-width: $bp-6) {
+    transform: scale(1.4);
+  }
 }
 
 .heading-4 {

@@ -144,19 +144,24 @@ body {
   font-size: 1.4rem;
   line-height: 1.4;
   display: grid;
-  grid-template-rows: 5rem 8rem 70rem repeat(6, min-content);
+  grid-template-rows: 5rem 6rem 60rem repeat(6, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 27rem)) [center-end] minmax(10rem, 1fr) [full-end];
 }
 
 @media only screen and (max-width: 58.75em) {
   body {
-    grid-template-rows: 5rem 8rem 50rem repeat(6, min-content);
+    grid-template-rows: 5rem 6rem 50rem repeat(6, min-content);
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  body {
+    grid-template-rows: 3rem 5rem calc(100vh - 8rem) repeat(6, min-content);
   }
 }
 
 @media only screen and (max-width: 30.25em) {
   body {
-    grid-template-rows: 5rem 8rem 30rem repeat(6, min-content);
     grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, minmax(min-content, 27rem)) [center-end] minmax(5rem, 1fr) [full-end];
   }
 }
@@ -173,6 +178,7 @@ body {
 @media only screen and (max-width: 40em) {
   .heading-1 {
     display: block;
+    font-size: 1.5rem;
   }
 }
 
@@ -243,6 +249,17 @@ body {
 
 .heading-3--pijaca-2 {
   grid-row: 7 / 8;
+}
+
+.pijaca-foto:hover + .heading-3 {
+  backdrop-filter: blur(10px);
+  transform: scale(2);
+}
+
+@media only screen and (max-width: 40em) {
+  .pijaca-foto:hover + .heading-3 {
+    transform: scale(1.4);
+  }
 }
 
 .heading-4 {
@@ -535,6 +552,13 @@ body {
   transform: translateY(-0.15rem);
 }
 
+@media only screen and (max-width: 40em) {
+  .logo--nav {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
 .logo__link--top {
   display: block;
   transition: all 0.2s;
@@ -656,6 +680,13 @@ body {
 
 .social__top-icon:hover, .social__top-icon:active {
   transform: translateY(-0.15rem);
+}
+
+@media only screen and (max-width: 40em) {
+  .social__top-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .about {
@@ -911,9 +942,10 @@ body {
   }
 }
 
-@media only screen and (max-width: 30.25em) {
+@media only screen and (max-width: 40em) {
   .header {
-    padding: 3rem;
+    align-content: center;
+    row-gap: 8rem;
   }
 }
 
@@ -978,11 +1010,6 @@ body {
 
 .pijaca-foto--2 {
   grid-row: 7 / 8;
-}
-
-.pijaca-foto:hover + .heading-3 {
-  backdrop-filter: blur(10px);
-  transform: scale(2);
 }
 
 .story {
