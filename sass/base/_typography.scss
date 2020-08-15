@@ -69,6 +69,10 @@
     font-weight: 600;
     text-shadow: $text-shadow-1;
 
+    @media only screen and (max-width: $bp-6) {
+      font-size: 4rem;
+    }
+
     &-1 {
       grid-row: 5 / 6;
     }
