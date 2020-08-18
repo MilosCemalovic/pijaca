@@ -679,19 +679,18 @@ body {
   text-decoration: none;
   background-color: #000;
   color: #fff;
-  width: 2rem;
-  height: 2rem;
   border-radius: 50%;
   font-size: 1rem;
   display: grid;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s;
   margin: 0 0 .5rem -.2rem;
 }
 
-.social__cv:hover, .social__cv:active {
-  transform: translateY(-0.15rem);
+@media only screen and (max-width: 40em) {
+  .social__cv {
+    font-size: .8rem;
+  }
 }
 
 .social__top {
@@ -702,18 +701,19 @@ body {
   column-gap: 2rem;
 }
 
-.social__top-icon {
+.social__top-icon, .social__cv {
   width: 2rem;
   height: 2rem;
   transition: all 0.2s;
 }
 
-.social__top-icon:hover, .social__top-icon:active {
+.social__top-icon:hover, .social__top-icon:active, .social__cv:hover, .social__cv:active {
   transform: translateY(-0.15rem);
 }
 
 @media only screen and (max-width: 40em) {
-  .social__top-icon {
+  .social__top-icon, .social__cv {
+    margin-top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
   }

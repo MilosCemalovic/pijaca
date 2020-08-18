@@ -4,13 +4,14 @@
     text-decoration: none;
     background-color: $color-black;
     color: $color-white;
-    width: 2rem;
-    height: 2rem;
     border-radius: 50%;
     font-size: 1rem;
     @include grid-center-1;
-    @include hover-active;
     margin: 0 0 .5rem -.2rem;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: .8rem;
+    }
   } 
 
   &__top {
@@ -24,16 +25,20 @@
     justify-content: end;
     column-gap: 2rem;
 
-    &-icon {
-      width: 2rem;
-      height: 2rem;
-      @include hover-active;
+  }
 
-      @media only screen and (max-width: $bp-6) {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
+  &__top-icon,
+  &__cv {
+    width: 2rem;
+    height: 2rem;
+    @include hover-active;
+
+    @media only screen and (max-width: $bp-6) {
+      margin-top: 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
+
   }
 
 }
