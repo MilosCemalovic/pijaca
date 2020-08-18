@@ -675,6 +675,25 @@ body {
   }
 }
 
+.social__cv {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin: 0 0 .5rem -.2rem;
+}
+
+.social__cv:hover, .social__cv:active {
+  transform: translateY(-0.15rem);
+}
+
 .social__top {
   display: grid;
   align-items: center;

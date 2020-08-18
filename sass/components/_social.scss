@@ -1,4 +1,18 @@
 .social {
+
+  &__cv {
+    text-decoration: none;
+    background-color: $color-black;
+    color: $color-white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    @include grid-center-1;
+    @include hover-active;
+    margin: 0 0 .5rem -.2rem;
+  } 
+
   &__top {
 
     // width: 20rem;
