@@ -166,12 +166,24 @@ body {
   }
 }
 
-.heading-1, .heading-2, .heading-3 {
+.heading-1,
+.heading-2, .heading-3 {
   font-family: "Lato", sans-serif;
 }
 
-.heading-1 {
+.heading-1,
+.heading-2 {
   color: #02d002;
+}
+
+.heading-1--link:link, .heading-1--link:visited,
+.heading-2--link:link,
+.heading-2--link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heading-1 {
   display: none;
 }
 
@@ -182,21 +194,15 @@ body {
   }
 }
 
-.heading-2--link {
-  text-decoration: none;
+.heading-2 {
+  margin-left: 2rem;
 }
 
 @media only screen and (max-width: 40em) {
-  .heading-2--link {
+  .heading-2 {
     display: none;
     margin-left: 1rem;
   }
-}
-
-.heading-2--nav {
-  color: #02d002;
-  margin-left: 2rem;
-  display: block;
 }
 
 .heading-3 {

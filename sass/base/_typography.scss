@@ -2,9 +2,20 @@
   font-family: $font-primary;
 }
 
-.heading-1 {
+.heading-1,
+.heading-2 {
   @extend %heading;
   color: $color-green;
+
+  &--link:link,
+  &--link:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.heading-1 {
+
   display: none; 
 
   @media only screen and (max-width: $bp-6) {
@@ -14,21 +25,12 @@
 }
 
 .heading-2 {
-  @extend %heading;
 
-  &--link {
-    text-decoration: none;
+  margin-left: 2rem;
 
-    @media only screen and (max-width: $bp-6) {
-      display: none;
-      margin-left: 1rem;
-    }
-  }
-  
-  &--nav {
-    color: $color-green;
-    margin-left: 2rem;
-    display: block; 
+  @media only screen and (max-width: $bp-6) {
+    display: none;
+    margin-left: 1rem;
   }
 }
 
