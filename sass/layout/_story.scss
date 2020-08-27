@@ -85,13 +85,5 @@
       align-self: center;
     }
   }
-
-  &__box--1:hover &__img--1 {
-    animation: moveInRight 2s;
-  }
-
-  &__box--2:hover &__img--2 {
-    animation: moveInLeft 2s;
-  }
-
+  
 }

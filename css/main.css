@@ -146,6 +146,7 @@ body {
   display: grid;
   grid-template-rows: 5rem 6rem 60rem repeat(6, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 27rem)) [center-end] minmax(10rem, 1fr) [full-end];
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 58.75em) {
@@ -261,17 +262,6 @@ body {
 
 .heading-3--pijaca-2 {
   grid-row: 7 / 8;
-}
-
-.pijaca-foto:hover + .heading-3 {
-  backdrop-filter: blur(10px);
-  transform: scale(2);
-}
-
-@media only screen and (max-width: 40em) {
-  .pijaca-foto:hover + .heading-3 {
-    transform: scale(1.2);
-  }
 }
 
 .heading-4 {
@@ -484,6 +474,49 @@ body {
   }
 }
 
+.from-right,
+.from-left,
+.from-down {
+  transition: opacity 100ms ease, transform .5s ease-in;
+  opacity: 0;
+}
+
+.from-right.appear,
+.from-left.appear,
+.from-down.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-right {
+  transform: translateX(-100%);
+}
+
+.from-left {
+  transform: translateX(100%);
+}
+
+.from-down {
+  transform: translateY(50%);
+}
+
+.to-out {
+  backdrop-filter: blur(10px);
+  transform: scale(2);
+  transition: transform .5s ease-in;
+}
+
+@media only screen and (max-width: 40em) {
+  .to-out {
+    transform: scale(1.2);
+  }
+}
+
+.to-out.appear {
+  backdrop-filter: none;
+  transform: scale(1);
+}
+
 .form {
   width: 80%;
   display: grid;
@@ -539,18 +572,6 @@ body {
   transform: scale(1.2);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   padding: 2rem;
-}
-
-.about:hover .location--1 {
-  animation: moveInLeft 2s;
-}
-
-.about:hover .location--2 {
-  animation: moveInBottom 2s;
-}
-
-.about:hover .location--3 {
-  animation: moveInRight 2s;
 }
 
 .logo--top {
@@ -869,18 +890,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.features:hover .features__img {
-  animation: moveInRight 2s;
-}
-
-.features:hover .heading-4 {
-  animation: moveInLeft 2s;
-}
-
-.features:hover .features__content {
-  animation: moveInBottom 2s;
-}
-
 .footer-1 {
   grid-column: full-start / full-end;
   grid-row: 9 / 10;
@@ -1142,14 +1151,6 @@ body {
     height: 80%;
     align-self: center;
   }
-}
-
-.story__box--1:hover .story__img--1 {
-  animation: moveInRight 2s;
-}
-
-.story__box--2:hover .story__img--2 {
-  animation: moveInLeft 2s;
 }
 
 .top {

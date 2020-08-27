@@ -87,15 +87,6 @@
 
 }
 
-.pijaca-foto:hover + .heading-3 {
-  backdrop-filter: blur(10px);
-  transform: scale(2);
-
-  @media only screen and (max-width: $bp-6) {
-    transform: scale(1.2);
-  }
-}
-
 .heading-4 {
 
   color: $color-grey-dark-3;

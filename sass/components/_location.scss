@@ -22,20 +22,4 @@
     padding: 2rem;
   }
 
-
-
-}
-
-.about:hover .location {
-  &--1 {
-    animation: moveInLeft 2s;
-  }
-
-  &--2 {
-    animation: moveInBottom 2s;
-  }
-
-  &--3 {
-    animation: moveInRight 2s;
-  }
 }

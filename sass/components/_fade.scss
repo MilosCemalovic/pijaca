@@ -1,0 +1,40 @@
+.from-right,
+.from-left,
+.from-down {
+  transition: opacity 100ms ease, transform .5s ease-in;
+  opacity: 0;
+}
+
+.from-right.appear, 
+.from-left.appear,
+.from-down.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.from-right {
+  transform: translateX(-100%);
+}
+
+.from-left {
+  transform: translateX(100%);
+}
+
+.from-down {
+  transform: translateY(50%);
+}
+
+.to-out {
+  backdrop-filter: blur(10px);
+  transform: scale(2);
+  transition: transform .5s ease-in;
+
+  @media only screen and (max-width: $bp-6) {
+    transform: scale(1.2);
+  }
+}
+
+.to-out.appear {
+  backdrop-filter: none;
+  transform: scale(1);
+}
