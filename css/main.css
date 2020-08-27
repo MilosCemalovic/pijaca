@@ -474,26 +474,32 @@ body {
   }
 }
 
-.from-right,
 .from-left,
+.from-right,
+.from-up,
 .from-down {
-  transition: opacity 100ms ease, transform .5s ease-in;
+  transition: all 1.5s;
   opacity: 0;
 }
 
-.from-right.appear,
 .from-left.appear,
+.from-right.appear,
+.from-up.appear,
 .from-down.appear {
   transform: translateX(0);
   opacity: 1;
 }
 
-.from-right {
+.from-left {
   transform: translateX(-100%);
 }
 
-.from-left {
+.from-right {
   transform: translateX(100%);
+}
+
+.from-up {
+  transform: translateY(-350%);
 }
 
 .from-down {
@@ -1142,7 +1148,6 @@ body {
 .story__img--2 {
   width: 100%;
   height: 105%;
-  z-index: 5;
   align-self: center;
 }
 
