@@ -1,2 +1,2 @@
 # pijaca
-single page market template - BEM Architecture, HTML & CSS, CSS GRID, SASS and JS smooth scroll
+BEM Architecture, HTML5, CSS GRID, SASS, Intersection Observer and Smooth Scroll
