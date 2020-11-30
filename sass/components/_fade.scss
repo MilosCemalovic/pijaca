@@ -16,6 +16,10 @@
 
 .from-left {
   transform: translateX(-100%);
+
+  @media only screen and (max-width: $bp-3) {
+    transform: translateX(-50%);
+  }
 }
 
 .from-right {
