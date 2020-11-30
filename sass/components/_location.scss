@@ -1,12 +1,11 @@
 .location {
   display: grid;
   transition: $transition-2;
+  padding: 2rem;
 
   @media only screen and (max-width: $bp-3) {
     grid-column: 1 / -1;
     justify-items: center;
-    box-shadow: $bx-sw-1;
-    padding: 3rem 0;
   }
 
   &__detail {
@@ -17,9 +16,7 @@
 
   &:hover {
     backdrop-filter: blur(10px);
-    transform: scale(1.2);
-    box-shadow: $bx-sw-2;
-    padding: 2rem;
+    box-shadow: $bx-sw-1;
   }
 
 }
