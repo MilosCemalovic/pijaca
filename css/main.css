@@ -494,8 +494,20 @@ body {
   transform: translateX(-100%);
 }
 
+@media only screen and (max-width: 58.75em) {
+  .from-left {
+    transform: translateX(-50%);
+  }
+}
+
 .from-right {
   transform: translateX(100%);
+}
+
+@media only screen and (max-width: 58.75em) {
+  .from-right {
+    transform: translateX(50%);
+  }
 }
 
 .from-up {
@@ -556,14 +568,13 @@ body {
 .location {
   display: grid;
   transition: all 0.5s;
+  padding: 2rem;
 }
 
 @media only screen and (max-width: 58.75em) {
   .location {
     grid-column: 1 / -1;
     justify-items: center;
-    box-shadow: 0 0.7rem 1.1rem rgba(0, 0, 0, 0.1);
-    padding: 3rem 0;
   }
 }
 
@@ -575,9 +586,7 @@ body {
 
 .location:hover {
   backdrop-filter: blur(10px);
-  transform: scale(1.2);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  padding: 2rem;
+  box-shadow: 0 0.7rem 1.1rem rgba(0, 0, 0, 0.1);
 }
 
 .logo--top {
